@@ -16,38 +16,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
-     <!-- KakaoTalk Share Script -->
-     <script src="https://developers.kakao.com/sdk/js/kakao.min/js"></script>
-    <!-- Kakao talk script-->
-    <script type="text/javascript">
-        Kakao.init('5e758dd8876482ffabe379e630d7a7e8'); // 초기화
-        function sendLink() { // 카카오톡 공유하기
-          Kakao.Link.sendDefault({
-            objectType: 'text',
-            text: '기본 템플릿으로 제공되는 텍스트 템플릿은 텍스트를 최대 200자까지 표시할 수 있습니다. 텍스트 템플릿은 텍스트 영역과 하나의 기본 버튼을 가집니다. 임의의 버튼을 설정할 수도 있습니다. 여러 장의 이미지, 프로필 정보 등 보다 확장된 형태의 카카오링크는 다른 템플릿을 이용해 보낼 수 있습니다.',
-            link: {
-              mobileWebUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
-              webUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
-            },
-          })
-        }
-    </script>
-  <!-- instagram shere script-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
 
 </head>
 <body class="container">
+
     <!--시작화면-->
     <article class="start">
         <h1 class="main-title mt-5 text-center"> 당신은 어떤 새를 만나게 될까요?</h1>
-        <img class="logo" src="img/logo.png">
         <h2 class="sub-title mt-3 text-center">일행과 낯선 곳을 여행 하다가 <br> 길을 잃었다!</h2>
-        <img class="updown-slash mt-5" src="img/up-slash.png" alt="up-slash">
         <div class="start-cover mt-3 mb-3">
             <button type="button" id="start-button" class="btn-start btn btn-primary" onclick='start();'>당신의 반응은?</button>
         </div>
-        <img class="updown-slash" src="img/down-slash.png" alt="up-slash">
-    </article>
+    </article>  
+    <audio autoplay controls> <source src="forest sound.mp3" type="audio/mp3"> </audio>
 
     <!--문제화면-->
     <article class="question">
@@ -179,13 +161,29 @@
                     num++;
             }          
         }
-    
-        
-      
-
-    
 </script>
     </script>
+
+    <!-- KakaoTalk Share Script -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min/js"></script>
+    <!-- Kakao talk script-->
+    <script type="text/javascript">
+        Kakao.init('5e758dd8876482ffabe379e630d7a7e8'); // 초기화
+        function sendLink() { // 카카오톡 공유하기
+          Kakao.Link.sendDefault({
+            objectType: 'text',
+            text: '기본 템플릿으로 제공되는 텍스트 템플릿은 텍스트를 최대 200자까지 표시할 수 있습니다. 텍스트 템플릿은 텍스트 영역과 하나의 기본 버튼을 가집니다. 임의의 버튼을 설정할 수도 있습니다. 여러 장의 이미지, 프로필 정보 등 보다 확장된 형태의 카카오링크는 다른 템플릿을 이용해 보낼 수 있습니다.',
+            link: {
+              mobileWebUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
+              webUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
+            },
+          })
+        }
+    </script>
+  <!-- instagram shere script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
 
     <!--코드 저작권
         Copyright (c) 2020 by Likelion (https://www.codelion.net/)

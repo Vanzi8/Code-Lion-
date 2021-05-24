@@ -2,12 +2,12 @@
     
     /* 전체 */
 
-    
-
-
     body {
     background-color: #1f1f1f;
     color: #ffffff;
+    background-image: url('img/배경/Media\ 00.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
     }
 
     html {
@@ -55,6 +55,7 @@
         -webkit-box-shadow:none !important;
     }
 
+
     /* 시작화면 */
 
 
@@ -71,27 +72,22 @@
     .main-title {
         font-family: 'Song Myung', sans-serif;
         font-size: 26px;
-        font-weight: 700;
-        color: #7c7c7c;
-        border-bottom: 3px solid #7c7c7c;
-        border-top: 3px solid #7c7c7c;
+        font-weight: 800;
+        color: black;
+        border-bottom: 3px solid black;
+        border-top: 3px solid black;
         padding: 3vh;
         width: 60%;
         margin: 0 auto;
-    }
-
-    .logo{
-        width: 200px;
-        margin: 0 auto;
-        margin-top: 30px;
-        margin-bottom: 0;
+        margin-bottom: 300px;
     }
 
     .sub-title {
         font-family: 'Noto Sans KR', sans-serif;
         font-size: 20px;
-        font-weight: 500;
-        color: #ebebeb;
+        font-weight: 800;
+        color: wihte;
+        -webkit-text-stroke: 1px black;
         line-height: 40px;
     }
 
@@ -104,21 +100,15 @@
         margin: auto;
     }
 
-    .btn-start {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 18px;
-        color:#ff9300;
-        background-color: #1f1f1f;
-        width: 150px;
-        height: 20%;
-    }
-
     .btn-start, .btn-start:visited, .btn-start:active {
         font-family: 'Noto Sans KR', sans-serif;
         font-size: 18px;
+        font-weight: 700;
         color:#ff9300;
-        background-color: #1f1f1f;
-        border: 3px solid #1f1f1f;
+        background-color: transparent;
+        border: 3px solid #ff9300;
+        width: 180px;
+        height: 70px;
     }
 
     .btn-start:active, .btn-start:focus {
@@ -135,13 +125,6 @@
         color: #1f1f1f;
         border: 3px solid #ff9300;
     }
-
-    .updown-slash {
-        width: 150px;
-        margin: 0 auto;
-        height: 10px;
-    }
-
 
     /* 문제 화면 */
 
@@ -182,6 +165,7 @@
         color: #ff9300;
         width: 400px;
         margin: 0 auto;
+       
     }
 
     .rectangle {
@@ -324,18 +308,19 @@
 
 @media (max-width: 768px) {
     
+    body {
+        background-color: #1f1f1f;
+        color: #ffffff;
+        background-image: url('img/배경/Media\ 00.gif');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        }
 
     .start{
         width: 100%;
         margin: 0 auto;
         margin-top: 5px;
-    }
-
-    .logo{
-        width: 45%;
-        margin: 0 auto;
-        margin-top: 0;
-        margin-bottom: 0;
     }
 
     .main-title {
@@ -348,7 +333,7 @@
         padding: 3vh;
         width: 65%;
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 270px;
     }
 
     .sub-title {
