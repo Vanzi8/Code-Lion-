@@ -54,6 +54,13 @@
         -webkit-box-shadow:none !important;
     }
 
+    @font-face {
+        font-family: 'MaruBuri-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+ 
     /* 시작화면 */
 
 
@@ -84,7 +91,7 @@
        
     }
 
-    .logo{
+    .leaf{
         width: 170px;
         margin: 0 auto;
         margin-top: 30px;
@@ -92,7 +99,7 @@
     }
 
     .sub-title {
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'MaruBuri-Regular';
         font-size: 22px;
         font-weight: 700;
         color: #ffffff;
@@ -113,7 +120,7 @@
 
 
     .btn-start {
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'MaruBuri-Regular';
         font-size: 18px;
         color:#ff9300;
         background-color: #1f1f1f;
@@ -122,7 +129,7 @@
     }
 
     .btn-start, .btn-start:visited, .btn-start:active {
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'MaruBuri-Regular';
         font-size: 18px;
         color:#ffffff;
         background-color: #1f1f1f;
@@ -130,7 +137,7 @@
     }
 
     .btn-start:active, .btn-start:focus {
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'MaruBuri-Regular';
         background-color: #74aa86 !important;
         border:#1f1f1f !important;
         font-size: 18px;
@@ -138,7 +145,7 @@
     }
 
     .btn-start:hover {
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'MaruBuri-Regular';
         background-color: #74aa86;
         color: #1f1f1f;
         border: 3px solid #74aa86;
@@ -150,7 +157,7 @@
 
     .btn-answer, .btn-answer:visited, .btn-answer:active, .btn-answer:focus {
         font-size: 18px;
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'MaruBuri-Regular';
         background-color: #525764;
         border: 3px solid #525764;
         width: 288px;
@@ -160,7 +167,7 @@
 
     .btn-answer:hover {
         font-size: 18px;
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'MaruBuri-Regular';
         background-color: #74aa86;
         border: 3px solid #1f1f1f;
         width: 288px;
@@ -179,7 +186,7 @@
     }
 
     .question-content {
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'MaruBuri-Regular';
         font-size: 20px;
         font-weight: 700;
         color: #ffffff;
@@ -218,8 +225,8 @@
     /* 결과 화면 */
 
     .result-message {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 20px;
+        font-family: 'Song Myung', sans-serif;
+        font-size: 30px;
         color: #94553f;
         margin: auto auto;
         font-weight: 700;
@@ -230,7 +237,7 @@
     }
 
     .result-animal {
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Song Myung', sans-serif;
         font-size: 2rem;
         font-weight: 800;
         color: #94553f;
@@ -241,7 +248,7 @@
         font-size: 16px;
         font-weight: 700;
         color: #74aa86;
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'MaruBuri-Regular';
         line-height: 30px;
         margin: 0 auto;
         -webkit-text-size-adjust: 100%;
@@ -250,7 +257,7 @@
     }
 
     .share-message {
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'MaruBuri-Regular';
         color:#74aa86;
         font-size: 24px;
         font-weight: 400;
@@ -324,10 +331,24 @@
         margin-bottom: 200px;
     }
 
-    .insta{
-        width: 20px;
-        height: 20px;
-        
+    .instagram{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 15px;
+        color:wheat;
+    }
+    
+    .instagram:hover{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: italic;
+        transition: 0.5s !important;
+        margin-left: 15px;
+        color: white;
+        background: linear-gradient(to bottom left, #833ab4, #fd1d1d,#fcb045);
+        border-radius: 6px;
     }
 
 
