@@ -68,7 +68,7 @@
         width: 60%;
         margin: 0 auto;
         margin-top: 50px;
-        background-color: rgba(70, 70, 82, 0.3);
+        background-color: rgba(92, 92, 102, 0.4);
         border-radius: 50px;
     }
 
@@ -122,13 +122,13 @@
     .btn-start {
         font-family: 'MaruBuri-Regular';
         font-size: 18px;
-        color:#ff9300;
-        background-color: #1f1f1f;
+        color:#ffffff;
+        background-color: #004c8c;
         width: 250px;
         height: 100px;
     }
 
-    .btn-start, .btn-start:visited, .btn-start:active {
+    .btn-start:visited {
         font-family: 'MaruBuri-Regular';
         font-size: 18px;
         color:#ffffff;
@@ -212,7 +212,7 @@
             width: 60%;
             margin: 0 auto;
             margin-top: 30px;
-            background-color: rgba(70, 70, 82, 0.3);
+            background-color: rgba(92, 92, 102, 0.4);
             border-radius: 50px;
         }
 
@@ -257,18 +257,19 @@
     }
 
     .share-message {
-        font-family: 'MaruBuri-Regular';
-        color:#74aa86;
+        font-family: 'Song Myung';
+        color:wheat;
         font-size: 24px;
         font-weight: 400;
         margin: 0 auto;
     }
 
     .result {
-        width: 60%;
+        width: 50%;
+        height: 60%;
         margin: 0 auto;
         margin-top: 30px;
-        background-color: rgba(70, 70, 82, 0.3);
+        background-color: rgba(92, 92, 102, 0.4);
         border-radius: 50px;
     }
 
@@ -333,26 +334,31 @@
 
     .instagram{
         font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        margin-left: 15px;
+        font-size: 22px;
+        font-weight: 500;
         color:wheat;
+        border: 1px solid wheat;
+        border-radius: 5px;
     }
     
     .instagram:hover{
         font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 22px;
+        font-weight: 700;
         font-style: italic;
-        transition: 1s !important;
-        color: white;
+        transition: 0.6s !important;
+        color: wheat;
         background: linear-gradient(to bottom left, #833ab4, #fd1d1d,#fcb045);
-        border-radius: 6px;
+        border-radius: 5px;
     }
 
     .orsaelogo{
-        width: 200px;
+        width: 170px;
         height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50px;
+        margin-top: 80px;
+        margin-bottom: 20px;
     }
 
 
@@ -362,23 +368,25 @@
     
 
     .start{
-        width: 100%;
+        width: 90%;
+        height: 60%;
         margin: 0 auto;
-        background-color: rgba(70, 70, 82, 0.2);
+        margin-top: 20px;
+        background-color: rgba(92, 92, 102, 0.4);
         border-radius: 50px;
     }
 
     .question{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
-        background-color: rgba(70, 70, 82, 0.2);
+        background-color: rgba(92, 92, 102, 0.4);
         border-radius: 50px;
     }
 
     .result{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
-        background-color: rgba(70, 70, 82, 0.2);
+        background-color: rgba(92, 92, 102, 0.4);
         border-radius: 50px;
     }
 
@@ -388,7 +396,7 @@
 
     .main-title {
         font-family: 'Song Myung', sans-serif;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 500;
         color: #ffffff;
         border-bottom: 3px solid #757474;
@@ -412,7 +420,7 @@
 
     .question-content {
         font-family: 'Noto Sans KR', sans-serif;
-        font-size: 16px;
+        font-size: 20px;
         color: #ffffff;
         width: 100%;
         margin: 0 auto;
@@ -445,4 +453,9 @@
 
 
 }
+
+/*애니메이션*/
+
+
+
 

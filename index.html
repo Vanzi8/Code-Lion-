@@ -26,7 +26,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
-  
+     <!-- KakaoTalk Share Script -->
+     <script src="https://developers.kakao.com/sdk/js/kakao.min/js"></script>
 
 </head>
 <body id="container">
@@ -39,12 +40,6 @@
         <div class="start-cover mt-3 mb-3">
             <button type="button" id="start-button" class="btn-start btn btn-primary" onclick="start(), bgchange();">당신의 반응은?</button>
         </div>  
-
-        <div class="col-sm-4 col-sm-offset-4">
-          <audio controls hidden="true" autoplay="true" style="width: 600px;">
-            <source src="forest sound.mp3">
-          </audio>
-        </div>
     </article>  
 
   
@@ -93,7 +88,7 @@
           </li>
         <!-- 카카오톡 공유 -->
               <li>
-         <a href="javascript:shareKatalk()"><img src="img/카카오톡.png" width="40" alt="카카오톡 공유하기"></a></li>
+         <a href="javascript:sendLink()"><img src="img/카카오톡.png" width="40" alt="카카오톡 공유하기"></a></li>
         <!-- 카카오스토리 공유 -->		
           <li>
             <a href="#" onclick="javascript:window.open('https://story.kakao.com/s/share?url=' +encodeURIComponent(document.URL), 'kakaostorysharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes, height=400,width=600');return false;" target="_blank" alt="Share on kakaostory"><img src="img/카카오스토리1.png" width="40" alt="카카오스토리 공유하기"></a>
@@ -219,24 +214,20 @@
 
 
 
-    <!-- KakaoTalk Share Script -->
-    <script src="https://developers.kakao.com/sdk/js/kakao.min/js"></script>
-    <!-- Kakao talk script-->
-    <script type="text/javascript">
-        Kakao.init('5e758dd8876482ffabe379e630d7a7e8'); // 초기화
-        function sendLink() { // 카카오톡 공유하기
-          Kakao.Link.sendDefault({
-            objectType: 'text',
-            text: '기본 템플릿으로 제공되는 텍스트 템플릿은 텍스트를 최대 200자까지 표시할 수 있습니다. 텍스트 템플릿은 텍스트 영역과 하나의 기본 버튼을 가집니다. 임의의 버튼을 설정할 수도 있습니다. 여러 장의 이미지, 프로필 정보 등 보다 확장된 형태의 카카오링크는 다른 템플릿을 이용해 보낼 수 있습니다.',
-            link: {
-              mobileWebUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
-              webUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
-            },
-          })
-        }
-    </script>
-  <!-- instagram shere script-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--kakaotalk shere script-->
+<script type="text/javascript">
+  Kakao.init('5e758dd8876482ffabe379e630d7a7e8');
+    function sendLink() { // 카카오톡 공유하기
+      Kakao.Link.sendDefault({
+        objectType: 'text',
+        text: '기본 템플릿으로 제공되는 텍스트 템플릿은 텍스트를 최대 200자까지 표시할 수 있습니다. 텍스트 템플릿은 텍스트 영역과 하나의 기본 버튼을 가집니다. 임의의 버튼을 설정할 수도 있습니다. 여러 장의 이미지, 프로필 정보 등 보다 확장된 형태의 카카오링크는 다른 템플릿을 이용해 보낼 수 있습니다.',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
+          webUrl: 'https://developers.kakao.com/docs/js/kakaotalklink#텍스트-템플릿-보내기',
+        },
+      })
+    }
+  </script>
 
 
 
@@ -269,11 +260,12 @@
 <!-- 패치할 것 
 1. 페이지 넘어갈때 트랜지션
 2. 팀명하고 문구 footer에 넣을것들이랑 header
-3. footer 작업 (인스타그램 계정) (펀딩 사이트)
-4. 텍스트 부분 정리하기 (양쪽 정렬로 바꾸고 싶은데 고민중)
-5. 배경 디자인 따라서 전반적인 색상 리디자인 -->
+3. 텍스트 부분 정리하기 (양쪽 정렬로 바꾸고 싶은데 고민중)
+4. 배경 디자인 따라서 전반적인 색상 리디자인 -->
 
 <!-- 고친것
-1. footer에 인스타 링크 입력-->
+1. footer에 인스타 링크 입력
+2. 배경이미지 순차 정렬
+3. 로고 넣음-->
 
 
