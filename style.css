@@ -396,15 +396,15 @@
 
     .main-title {
         font-family: 'Song Myung', sans-serif;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 500;
         color: #ffffff;
         border-bottom: 3px solid #757474;
         border-top: 3px solid #757474;
-        padding: 3vh;
+        padding: 10px;
         width: 100%;
         margin: 0 auto;
-        margin-bottom: 200px;
+        margin-bottom: 150px;
         
     }
 
