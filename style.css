@@ -300,6 +300,15 @@
         height: 405.17px;
     }
 
+    .supporters {
+        width: 85%;
+        height: 105%;
+        margin: 0 auto;
+        margin-top: 120px;
+        margin-bottom: 80px;
+        border-radius: 30px;
+    }
+
 
     /*SNS 공유*/
 
@@ -449,6 +458,15 @@
         -webkit-text-size-adjust: 100%;
         -moz-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
+    }
+
+    .supporters {
+        width: 90%;
+        height: 105%;
+        margin: 0 auto;
+        margin-top: 120px;
+        margin-bottom: 80px;
+        border-radius: 30px;
     }
 
 
